@@ -3,7 +3,6 @@ var slideCounter = 0,
     totalSlide = slideItem.length;
 function showImage(){
   let itemToShow = Math.abs(slideCounter%totalSlide);
-  console.log(itemToShow);
   slideItem.removeClass("show");
   slideItem.eq(itemToShow).addClass("show");
 }
